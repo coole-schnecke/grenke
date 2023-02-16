@@ -7,7 +7,7 @@ var buttonwert_d = 0;
 
 var counter_frage = 0;
 
-var richtige = ["1978", "Wolfgang Grenke"];
+var richtige = ["1978", "Wolfgang Grenke", "1900", "33", "4. April 2000"];
 
 var erste_frage = ["1978", "1960", "1999", "1964"];
 var zweite_frage = [
@@ -16,6 +16,9 @@ var zweite_frage = [
   "Hildegartus Grenki",
   "Robert Grenke",
 ];
+var dreite_frage = ["nur 4 Praktikanten","22000", "5400", "1900"];
+var vierte_frage = ["in allen", "33", "22", "11"];
+var fünfte_frage = ["4. April 2000", "5. April 2000", "6. April 2000", "7. April 2000"];
 
 var erste_frage2 = ["1978", "1960", "1999", "1964"];
 var zweite_frage2 = [
@@ -24,10 +27,13 @@ var zweite_frage2 = [
   "Hildegartus Grenki",
   "Robert Grenke",
 ];
+var dreite_frage2 = ["nur 4 Praktikanten","22000", "5400", "1900"];
+var vierte_frage2 = ["in allen", "33", "22", "11"];
+var fünfte_frage2 = ["4. April 2000", "5. April 2000", "6. April 2000", "7. April 2000"];
 
-var fragenzahl = [erste_frage, zweite_frage];
+var fragenzahl = [erste_frage, zweite_frage, dreite_frage, vierte_frage, fünfte_frage];
 
-var fragestellung = ["Wann wurde Grenke gründet?", "Wer hat Grenke gegründet?"];
+var fragestellung = ["Wann wurde Grenke gründet?", "Wer hat Grenke gegründet?", "Wie viele Mitarbeiter hat Grenke?", "In wie vielen Ländern ist Gränke vertreten?", "Seit wann ist Grenke an der Börse?"];
 
 function werteaufnull() {
   buttonwert_a = 0;
@@ -46,9 +52,12 @@ function ende() {
     "Herzlich Willkommen zum GRENKE Quiz!";
   erste_frage = erste_frage.concat(erste_frage2);
   zweite_frage = zweite_frage.concat(zweite_frage2);
+  dreite_frage = dreite_frage.concat(dreite_frage2);
+  vierte_frage = vierte_frage.concat(vierte_frage2);
+  fünfte_frage = fünfte_frage.concat(fünfte_frage2);
   counter_frage = 0;
   werteaufnull();
-  fragenzahl = [erste_frage, zweite_frage];
+  fragenzahl = [erste_frage, zweite_frage, dreite_frage, vierte_frage, fünfte_frage];
   window.alert("fertig");
 }
 
